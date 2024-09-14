@@ -6,6 +6,7 @@ import { HiSpeakerphone } from "react-icons/hi";
 import homepage from '../../assets/homepage.jpg';  // Full-resolution image
 import homepagePlaceholder from '../../assets/homepagePlaceholder.jpg';  
 import { motion } from 'framer-motion'; // Low-quality image
+import { Link } from 'react-router-dom';
 
 function Home() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -115,9 +116,11 @@ function Home() {
               variants={buttonVariants}
               className="flex flex-col md:flex-row gap-3 items-center mt-4"
             >
+              <Link to="/contact">
               <button className="bg-orange-500 text-white py-2 px-4 rounded-full mt-4 hover:bg-orange-600  md:text-sm">
                 Book an Appointment
               </button>
+              </Link>
               <button className="border text-white py-2 px-4 rounded-full md:mt-4   md:text-sm">
                 Call: +91 987654321
               </button>
@@ -151,7 +154,7 @@ function Home() {
               </div>
               {/* Text Column */}
               <div>
-                <h3 className="text-md font-bold group-hover:text-white transition-colors duration-300 text-center md:text-left">{service.title}</h3>
+                <h3 className="text-xl my-2 font-bold group-hover:text-white transition-colors duration-300 text-center md:text-left">{service.title}</h3>
                 <p className="mt-2 text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300 text-center md:text-left">{service.description}</p>
               </div>
             </div>
@@ -166,7 +169,7 @@ function Home() {
             <polygon points="328.375 384 332.073 458.999 256.211 406.28 179.924 459.049 183.625 384 151.586 384 146.064 496 182.756 496 256.169 445.22 329.242 496 365.936 496 360.414 384 328.375 384"></polygon>
             <path d="M415.409,154.914l-2.194-48.054L372.7,80.933,346.768,40.414l-48.055-2.2L256,16.093,213.287,38.219l-48.055,2.2L139.3,80.933,98.785,106.86l-2.194,48.054L74.464,197.628l22.127,42.715,2.2,48.053L139.3,314.323l25.928,40.52,48.055,2.195L256,379.164l42.713-22.126,48.055-2.195,25.928-40.52L413.214,288.4l2.195-48.053,22.127-42.715Zm-31.646,76.949L382,270.377l-32.475,20.78-20.78,32.475-38.515,1.76L256,343.125l-34.234-17.733-38.515-1.76-20.78-32.475L130,270.377l-1.76-38.515,17.733-34.234,1.76-38.515,32.475-20.78,38.515-1.76L256,121.75l34.234,17.733,38.515,1.76,32.475,20.78,1.76,38.515,17.733,34.234Z"></path>
           </svg>
-          <p className="px-6 md:text-lg poppins-light italic text-gray-800 md:px-32">
+          <p className="px-6 md:text-lg poppins-light italic text-gray-800 md:px-32 text-center">
           "Exceptional service! Dental Care Connect has streamlined our practice with top-notch insurance management and patient coordination, allowing us to focus more on delivering quality care."
           </p>
           <div className="flex justify-center space-x-3">

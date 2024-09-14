@@ -182,7 +182,7 @@ function Navbar() {
               <div className="pl-4   poppins-light">
                 <Link
                   to="/services/patient"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                  className="poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -192,7 +192,7 @@ function Navbar() {
                 </Link>
                 <Link
                   to="/services/insurance"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                  className=" poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -202,7 +202,7 @@ function Navbar() {
                 </Link>
                 <Link
                   to="/services/bookkeeping"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                  className=" poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -211,7 +211,7 @@ function Navbar() {
                   Bookkeeping & Accounting
                 </Link>     <Link
                   to="/services/pending"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                  className=" poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -220,7 +220,7 @@ function Navbar() {
                  Pending Claims Management
                 </Link>     <Link
                   to="/services/itservices"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                  className=" poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -229,7 +229,7 @@ function Navbar() {
                    IT Services
                 </Link>     <Link
                   to="/services/treatment"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                  className=" poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -238,7 +238,7 @@ function Navbar() {
                  Treatment Coordination
                 </Link>     <Link
                   to="/services/marketing"
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+                  className="poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
