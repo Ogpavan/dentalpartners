@@ -181,7 +181,7 @@ function Navbar() {
             {mobileDropdownOpen && (
               <div className="pl-4   poppins-light">
                 <Link
-                  to="/services/service1"
+                  to="/services/patient"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
@@ -191,7 +191,7 @@ function Navbar() {
                   Patient Coordination
                 </Link>
                 <Link
-                  to="/services/service2"
+                  to="/services/insurance"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
@@ -201,7 +201,7 @@ function Navbar() {
                    Insurance Eligibility & Benefits
                 </Link>
                 <Link
-                  to="/services/service3"
+                  to="/services/bookkeeping"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
@@ -210,7 +210,7 @@ function Navbar() {
                 >
                   Bookkeeping & Accounting
                 </Link>     <Link
-                  to="/services/service3"
+                  to="/services/pending"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
@@ -219,7 +219,7 @@ function Navbar() {
                 >
                  Pending Claims Management
                 </Link>     <Link
-                  to="/services/service3"
+                  to="/services/itservices"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
@@ -228,7 +228,7 @@ function Navbar() {
                 >
                    IT Services
                 </Link>     <Link
-                  to="/services/service3"
+                  to="/services/treatment"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
@@ -237,7 +237,7 @@ function Navbar() {
                 >
                  Treatment Coordination
                 </Link>     <Link
-                  to="/services/service3"
+                  to="/services/marketing"
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
                   onClick={() => {
                     setIsOpen(false);
