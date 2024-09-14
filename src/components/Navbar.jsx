@@ -90,7 +90,7 @@ function Navbar() {
                 </p>
               </button>
               {dropdownOpen && (
-                <div className="absolute mt-2 w-48 bg-white shadow-lg rounded-lg poppins-light">
+                <div className="absolute mt-2 w-48 bg-white shadow-lg rounded-lg poppins-light text-sm">
                   <Link
                     to="/services/patient"
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200 border-b border-gray-300"
@@ -135,10 +135,24 @@ function Navbar() {
                   </Link>
                   <Link
                     to="/services/marketing"
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Marketing Maintenance
+                  </Link>
+                  <Link
+                    to="/services/recruitment"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Recruitment Services
+                  </Link>
+                  <Link
+                    to="/services/business"
+                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200 rounded-b-lg"
+                    onClick={() => setDropdownOpen(false)}
+                  >
+                    Business Analytics
                   </Link>
                 </div>
               )}

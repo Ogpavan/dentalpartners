@@ -11,20 +11,18 @@ import { Link } from 'react-router-dom';
 function Home() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-
-
+  // Define animation variants for text and buttons
   const textRevealVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 1, // duration for each animation
+        duration: 1,
         ease: 'easeInOut',
       },
     },
   };
-
 
   const buttonVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -38,6 +36,30 @@ function Home() {
       },
     },
   };
+
+  // Define animation variants for the services container and cards
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        duration: 0.5,
+      },
+    },
+  };
+
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   // Array of services with icon, title, and description
   const services = [
     {
@@ -97,12 +119,13 @@ function Home() {
         </div>
 
         {/* Text Overlay */}
-        <div className="absolute inset-0 flex  ">
+        <div className="absolute inset-0 flex">
           <div className="bg-black bg-opacity-50 text-white w-full h-[600px] border flex justify-center items-left flex-col md:pl-28">
-          <motion.div
+            <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
               variants={textRevealVariants}
+              viewport={{ once: true, amount: 0.2 }}
               className="text-2xl md:text-4xl font-bold poppins-bold text-center md:text-left"
             >
               <p className="text-5xl">
@@ -112,16 +135,17 @@ function Home() {
             </motion.div>
             <motion.div
               initial="hidden"
-              animate="visible"
+              whileInView="visible"
               variants={buttonVariants}
+              viewport={{ once: true, amount: 0.2 }}
               className="flex flex-col md:flex-row gap-3 items-center mt-4"
             >
               <Link to="/contact">
-              <button className="bg-orange-500 text-white py-2 px-4 rounded-full mt-4 hover:bg-orange-600  md:text-sm">
-                Book an Appointment
-              </button>
+                <button className="bg-orange-500 text-white py-2 px-4 rounded-full mt-4 hover:bg-orange-600  md:text-sm">
+                  Book an Appointment
+                </button>
               </Link>
-              <button className="border text-white py-2 px-4 rounded-full md:mt-4   md:text-sm">
+              <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
                 Call: +91 987654321
               </button>
             </motion.div>
@@ -130,14 +154,17 @@ function Home() {
       </div>
 
       {/* Who We Are Section */}
-      <motion.div initial="hidden"
-              animate="visible"
-              variants={textRevealVariants}
-               className="my-28 p-5">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        variants={textRevealVariants}
+        viewport={{ once: true, amount: 0.2 }}
+        className="my-28 p-5"
+      >
         <h2 className="text-3xl poppins-bold text-gray-800 text-center">Who We Are</h2>
         <div className="mt-4 max-w-4xl mx-auto text-center">
           <p className="text-lg text-gray-700 poppins-light-italic">
-            "We are a <span className="text-orange-500">dedicated</span> team committed to providing exceptional care and support. Our mission is to streamline healthcare processes and offer comprehensive solutions that<span className="text-orange-500"> enhance</span> the patient experience and <span className="text-orange-500">improve operational efficiency</span> . With a focus on innovation and compassion, we strive to be a leader in the industry, ensuring that every patient receives the highest quality of care and attention."
+            "We are a <span className="text-orange-500">dedicated</span> team committed to providing exceptional care and support. Our mission is to streamline healthcare processes and offer comprehensive solutions that <span className="text-orange-500">enhance</span> the patient experience and <span className="text-orange-500">improve operational efficiency</span>. With a focus on innovation and compassion, we strive to be a leader in the industry, ensuring that every patient receives the highest quality of care and attention."
           </p>
         </div>
       </motion.div>
@@ -145,37 +172,51 @@ function Home() {
       {/* Services Section */}
       <div className="mt-10 p-5">
         <h2 className="text-3xl my-5 font-bold text-center">What We Offer</h2>
-        <div className="mt-5 flex flex-wrap justify-center gap-7 md:px-20 px-4">
+        <motion.div
+          className="mt-5 flex flex-wrap justify-center gap-7 md:px-20 px-4"
+          initial="hidden"
+          whileInView="visible"
+          variants={containerVariants}
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-5 rounded-lg shadow-lg flex flex-col md:flex-row justify-center items-center md:items-start min-w-[300px] w-[30%] m-4 group transition-colors duration-300 hover:bg-orange-500 hover:text-white">
+            <motion.div
+              key={index}
+              variants={cardVariants}
+              className="bg-white p-5 rounded-lg shadow-lg flex flex-col md:flex-row justify-center items-center md:items-start min-w-[300px] w-[30%] m-4 group transition-colors duration-300 hover:bg-orange-500 hover:text-white"
+            >
               {/* Icon Column */}
               <div className="mr-4 group-hover:text-white transition-colors duration-100 text-orange-500">
                 {service.icon}
               </div>
               {/* Text Column */}
               <div>
-                <h3 className="text-xl my-2 font-bold group-hover:text-white transition-colors duration-300 text-center md:text-left">{service.title}</h3>
-                <p className="mt-2 text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300 text-center md:text-left">{service.description}</p>
+                <h3 className="text-xl my-2 font-bold group-hover:text-white transition-colors duration-300 text-center md:text-left">
+                  {service.title}
+                </h3>
+                <p className="mt-2 text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300 text-center md:text-left">
+                  {service.description}
+                </p>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
 
       {/* Testimonials */}
-      <section className="my-16    ">
+      <section className="my-16">
         <div className="container flex flex-col items-center p-4 mx-auto space-y-6 md:p-8">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-16 h-16  text-orange-500">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" className="w-16 h-16 text-orange-500">
             <polygon points="328.375 384 332.073 458.999 256.211 406.28 179.924 459.049 183.625 384 151.586 384 146.064 496 182.756 496 256.169 445.22 329.242 496 365.936 496 360.414 384 328.375 384"></polygon>
             <path d="M415.409,154.914l-2.194-48.054L372.7,80.933,346.768,40.414l-48.055-2.2L256,16.093,213.287,38.219l-48.055,2.2L139.3,80.933,98.785,106.86l-2.194,48.054L74.464,197.628l22.127,42.715,2.2,48.053L139.3,314.323l25.928,40.52,48.055,2.195L256,379.164l42.713-22.126,48.055-2.195,25.928-40.52L413.214,288.4l2.195-48.053,22.127-42.715Zm-31.646,76.949L382,270.377l-32.475,20.78-20.78,32.475-38.515,1.76L256,343.125l-34.234-17.733-38.515-1.76-20.78-32.475L130,270.377l-1.76-38.515,17.733-34.234,1.76-38.515,32.475-20.78,38.515-1.76L256,121.75l34.234,17.733,38.515,1.76,32.475,20.78,1.76,38.515,17.733,34.234Z"></path>
           </svg>
           <p className="px-6 md:text-lg poppins-light italic text-gray-800 md:px-32 text-center">
-          "Exceptional service! Dental Care Connect has streamlined our practice with top-notch insurance management and patient coordination, allowing us to focus more on delivering quality care."
+            "Exceptional service! Dental Care Connect has streamlined our practice with top-notch insurance management and patient coordination, allowing us to focus more on delivering quality care."
           </p>
           <div className="flex justify-center space-x-3">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPifbSMjy9cWkAjAH-xuPG_MTpfcSbPso5FQ&s" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />
             <div>
-              <p className="leading-tight poppins-bold">Dr.Rajesh Kapoor</p>
+              <p className="leading-tight poppins-bold">Dr. Rajesh Kapoor</p>
               <p className="text-sm leading-tight dark:text-gray-600">Dentist</p>
             </div>
           </div>

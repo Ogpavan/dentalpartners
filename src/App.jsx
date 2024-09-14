@@ -14,6 +14,8 @@ import Marketing from './pages/Services/Dropdown/Marketing';
 import Pending from './pages/Services/Dropdown/Pending';
 import Treatment from './pages/Services/Dropdown/Treatment';
 import Scheduler from './pages/Contact/Scheduler';
+import Recruitment from './pages/Services/Dropdown/Recruitment';
+import Business from './pages/Services/Dropdown/Business';
  
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
                   <Route path='/services/patient' element={<Patient />} />
                   <Route path="/services/pending" element={ <Pending />} />
                   <Route path="/services/treatment" element={ <Treatment />} />
+                  <Route path="/services/recruitment" element={<Recruitment />} />
+                  <Route path="/services/business" element={<Business />} />
 
           <Route path="/contact" element={<Scheduler />} />
         </Routes>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaShieldAlt, FaCheckCircle, FaDollarSign, FaClipboardCheck } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 
 function Insurance() {
   return (
@@ -14,7 +15,12 @@ function Insurance() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Understanding Insurance Eligibility and Benefits Verification */}
-        <div className="text-center border border-gray-300 rounded-lg p-4">
+        <motion.div
+          className="text-center border border-gray-300 rounded-lg p-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <div className="mb-4 flex justify-center">
             <FaShieldAlt className="text-4xl text-orange-500" />
           </div>
@@ -22,10 +28,15 @@ function Insurance() {
           <p className="text-gray-600 poppins-light text-sm">
             Verify insurance coverage and understand policy limitations for accurate treatment planning.
           </p>
-        </div>
+        </motion.div>
 
         {/* Benefits of Insurance Eligibility and Benefits Verification */}
-        <div className="text-center border border-gray-300 rounded-lg p-4">
+        <motion.div
+          className="text-center border border-gray-300 rounded-lg p-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <div className="mb-4 flex justify-center">
             <FaCheckCircle className="text-4xl text-orange-500" />
           </div>
@@ -33,10 +44,15 @@ function Insurance() {
           <p className="text-gray-600 poppins-light text-sm">
             Enhance patient experience, increase revenue, and improve office efficiency with accurate verification.
           </p>
-        </div>
+        </motion.div>
 
         {/* Process of Insurance Eligibility and Benefits Verification */}
-        <div className="text-center border border-gray-300 rounded-lg p-4">
+        <motion.div
+          className="text-center border border-gray-300 rounded-lg p-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <div className="mb-4 flex justify-center">
             <FaClipboardCheck className="text-4xl text-orange-500" />
           </div>
@@ -44,10 +60,15 @@ function Insurance() {
           <p className="text-gray-600 poppins-light text-sm">
             Collect patient information, verify coverage, determine benefits, and communicate clearly.
           </p>
-        </div>
+        </motion.div>
 
         {/* Best Practices */}
-        <div className="text-center border border-gray-300 rounded-lg p-4">
+        <motion.div
+          className="text-center border border-gray-300 rounded-lg p-4"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: 'spring', stiffness: 300 }}
+        >
           <div className="mb-4 flex justify-center">
             <FaDollarSign className="text-4xl text-orange-500" />
           </div>
@@ -55,7 +76,7 @@ function Insurance() {
           <p className="text-gray-600 poppins-light text-sm">
             Utilize technology, train staff, and conduct regular audits for effective insurance verification.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
