@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Services from './pages/Services/Services';
-import Contact from './pages/Contact/Scheduler';
 import Footer from './components/Footer';
 import Patient from './pages/Services/Dropdown/Patient';
 import Bookkeeping from './pages/Services/Dropdown/Bookkeeping';
