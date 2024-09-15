@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { IoNewspaperSharp } from "react-icons/io5";
 import { FaBookMedical, FaStethoscope, FaUserDoctor, FaComputer } from "react-icons/fa6";
 import { AiFillClockCircle } from "react-icons/ai";
@@ -98,6 +98,12 @@ function Home() {
       description: 'Involves planning, executing, and overseeing strategies to promote products or services, analyze market trends, and achieve business objectives.',
     },
   ];
+
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   return (
     <div className="relative">

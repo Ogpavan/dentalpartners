@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
 import about from '../../assets/about.jpg';
-import getintouch from '../../assets/getintouch.jpg';
-  // Replace with actual image paths
+
+
 
 function About() {
+
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
+
   return (
     <div className="min-h-screen  ">
       {/* Hero Section */}

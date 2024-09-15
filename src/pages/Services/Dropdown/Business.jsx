@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaCogs } from "react-icons/fa";
 import { FaChartLine, FaDatabase, FaRegChartBar,   FaLightbulb } from 'react-icons/fa6';
 
 function Business() {
-  // Array of business analytics services with icon, title, and description
+  
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const analyticsServices = [
     {
       icon: <FaChartLine className="text-5xl transition-colors duration-300" />,

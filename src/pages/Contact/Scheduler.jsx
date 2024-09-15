@@ -23,12 +23,12 @@ function Scheduler() {
         <p className="text-gray-600 poppins-light mb-4">
           If you have any questions or need further assistance, feel free to reach out to us.
         </p>
-        <div className="flex justify-center gap-8">
-          <div className="flex items-center">
+        <div className="flex justify-center gap-8 flex-col md:flex-row ">
+          <div className="flex items-center flex-col md:flex-row">
             <FaPhoneAlt className="text-orange-500 text-2xl mr-2" />
             <span className="text-gray-600 poppins-light">+1 (555) 123-4567</span>
           </div>
-          <div className="flex items-center">
+          <div className="flex items-center justify-center">
             <FaEnvelope className="text-orange-500 text-2xl mr-2" />
             <span className="text-gray-600 poppins-light">contact@dentalcareconnects.com</span>
           </div>

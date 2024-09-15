@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaBullhorn, FaChartPie, FaCogs, FaRegStar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -24,6 +24,13 @@ const cardVariants = {
 };
 
 function MarketingMaintenance() {
+
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="md:mx-48 mx-4 px-4 py-10">
       <h1 className="text-3xl poppins-bold text-gray-800 text-center mb-8">

@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaShieldAlt, FaCheckCircle, FaDollarSign, FaClipboardCheck } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 function Insurance() {
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   return (
     <div className="md:mx-48 mx-4 px-4 py-10">
       <h1 className="text-3xl poppins-bold text-gray-800 text-center mb-8">

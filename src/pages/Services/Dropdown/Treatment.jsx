@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaCalendarAlt, FaStethoscope, FaHandsHelping, FaChartBar } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 function Treatment() {
+
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
 
   return (

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FaUsers, FaClipboardCheck, FaUserTie, FaHandshake, FaUserGraduate } from 'react-icons/fa6';
 
 function Recruitment() {
-  // Array of recruitment services with icon, title, and description
+  
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const recruitmentServices = [
     {
       icon: <FaUsers className="text-5xl transition-colors duration-300" />,
