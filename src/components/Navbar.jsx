@@ -169,7 +169,7 @@ function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3  shadow-lg">
             <Link
               to="/"
               className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/')}`}
@@ -193,7 +193,7 @@ function Navbar() {
               </p>
             </button>
             {mobileDropdownOpen && (
-              <div className="pl-4   poppins-light">
+              <div className="pl-4   poppins-light ">
                 <Link
                   to="/services/patient"
                   className="poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
@@ -252,7 +252,7 @@ function Navbar() {
                  Treatment Coordination
                 </Link>     <Link
                   to="/services/marketing"
-                  className="poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200"
+                  className="poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200  border-b border-gray-300"
                   onClick={() => {
                     setIsOpen(false);
                     setMobileDropdownOpen(false);
@@ -262,26 +262,24 @@ function Navbar() {
                 </Link>
                 <Link
                     to="/services/recruitment"
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200 border-b border-gray-300"
+                    className="block px-3 py-2 text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Recruitment Services
                   </Link>
                   <Link
                     to="/services/business"
-                    className="block px-4 py-2 text-gray-800 hover:bg-gray-200 rounded-b-lg"
+                    className="block px-3 py-2 text-gray-800 hover:bg-gray-200 rounded-b-lg"
                     onClick={() => setDropdownOpen(false)}
                   >
                     Business Analytics
                   </Link>
               </div>
             )}
-            <Link
-              to="/contact"
-              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/contact')}`}
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
+             <Link to="/contact">
+              <button className="text-orange-500 border border-orange-500 poppins-medium text-xs py-2 px-4 rounded-full w-full mt-3 mb-2 hover:bg-orange-600 hover:text-white">
+                Book an Appointment
+              </button>
             </Link>
           </div>
         </div>
