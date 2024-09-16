@@ -61,42 +61,65 @@ function Home() {
   };
 
   // Array of services with icon, title, and description
-  const services = [
-    {
-      icon: <IoNewspaperSharp className="text-5xl transition-colors duration-300" />,
-      title: 'Insurance Eligibility & Benefits',
-      description: 'Determining if a patient qualifies for coverage and what services or treatments are covered, including costs.',
-    },
-    {
-      icon: <FaBookMedical className="text-5xl transition-colors duration-300" />,
-      title: 'Bookkeeping & Accounting',
-      description: 'Involves recording financial transactions and maintaining accurate financial records for a business.',
-    },
-    {
-      icon: <AiFillClockCircle className="text-5xl transition-colors duration-300" />,
-      title: 'Pending Claims Management',
-      description: 'Involves tracking, reviewing, and resolving outstanding insurance claims to ensure timely reimbursement.',
-    },
-    {
-      icon: <FaComputer className="text-5xl transition-colors duration-300" />,
-      title: 'IT Services',
-      description: 'Provides technical support, infrastructure management, and software solutions to optimize business operations and technology systems.',
-    },
-    {
-      icon: <FaUserDoctor className="text-5xl transition-colors duration-300" />,
-      title: 'Patient Coordination',
-      description: 'Involves organizing and managing patient care, appointments, and communication to ensure smooth and effective treatment processes.',
-    },
-    {
-      icon: <FaStethoscope className="text-5xl transition-colors duration-300" />,
-      title: 'Treatment Coordination',
-      description: 'Involves managing and organizing various aspects of a patients care plan to ensure seamless and effective treatment across different healthcare providers.',
-    },
-    {
-      icon: <HiSpeakerphone className="text-5xl transition-colors duration-300" />,
-      title: 'Marketing Management',
-      description: 'Involves planning, executing, and overseeing strategies to promote products or services, analyze market trends, and achieve business objectives.',
-    },
+  
+    const services = [
+      {
+        icon: <IoNewspaperSharp className="text-5xl transition-colors duration-300" />,
+        title: 'Insurance Eligibility & Benefits',
+        description: 'Determining if a patient qualifies for coverage and what services or treatments are covered, including costs.',
+        link: '/services/insurance',
+      },
+      {
+        icon: <FaBookMedical className="text-5xl transition-colors duration-300" />,
+        title: 'Bookkeeping & Accounting',
+        description: 'Involves recording financial transactions and maintaining accurate financial records for a business.',
+        link: '/services/bookkeeping',
+      },
+      {
+        icon: <AiFillClockCircle className="text-5xl transition-colors duration-300" />,
+        title: 'Pending Claims Management',
+        description: 'Involves tracking, reviewing, and resolving outstanding insurance claims to ensure timely reimbursement.',
+        link: '/services/pending',
+      },
+      {
+        icon: <FaComputer className="text-5xl transition-colors duration-300" />,
+        title: 'IT Services',
+        description: 'Provides technical support, infrastructure management, and software solutions to optimize business operations.',
+        link: '/services/itservices',
+      },
+      {
+        icon: <FaUserDoctor className="text-5xl transition-colors duration-300" />,
+        title: 'Patient Coordination',
+        description: 'Involves organizing and managing patient care, appointments, and communication for effective treatment processes.',
+        link: '/services/patient',
+      },
+      {
+        icon: <FaStethoscope className="text-5xl transition-colors duration-300" />,
+        title: 'Treatment Coordination',
+        description: 'Managing a patient’s care plan across healthcare providers to ensure smooth and effective treatment.',
+        link: '/services/treatment',
+      },
+      {
+        icon: <HiSpeakerphone className="text-5xl transition-colors duration-300" />,
+        title: 'Marketing Management',
+        description: 'Planning and executing marketing strategies to promote products or services and achieve business objectives.',
+        link: '/services/marketing',
+      },
+      {
+        icon: <FaUserDoctor className="text-5xl transition-colors duration-300" />,
+        title: 'Recruitment Services',
+        description: 'Sourcing, interviewing, and hiring candidates for various roles to meet business needs effectively.',
+        link: '/services/recruitment',
+      },
+      {
+        icon: <FaComputer className="text-5xl transition-colors duration-300" />,
+        title: 'Business Analyst',
+        description: 'Analyzing business operations to identify opportunities for improvement and optimize performance.',
+        link: '/services/business',
+      },
+   
+    
+    
   ];
 
   
@@ -176,6 +199,8 @@ function Home() {
       </motion.div>
 
       {/* Services Section */}
+      <div className="relative">
+      {/* Services Section */}
       <div className="mt-10 p-5">
         <h2 className="text-3xl my-5 font-bold text-center">What We Offer</h2>
         <motion.div
@@ -189,25 +214,30 @@ function Home() {
             <motion.div
               key={index}
               variants={cardVariants}
-              className="bg-white p-5 rounded-lg shadow-lg flex flex-col md:flex-row justify-center items-center md:items-start min-w-[300px] w-[30%] m-4 group transition-colors duration-300 hover:bg-orange-500 hover:text-white"
+              className="bg-white p-5 rounded-lg shadow-lg  min-w-[300px] w-[30%] m-4 group transition-colors duration-300 hover:bg-orange-500 hover:text-white"
             >
+              
+              <Link to={service.link} className='flex flex-col md:flex-row justify-center items-center md:items-start'>
               {/* Icon Column */}
               <div className="mr-4 group-hover:text-white transition-colors duration-100 text-orange-500">
                 {service.icon}
               </div>
               {/* Text Column */}
               <div>
-                <h3 className="text-xl my-2 font-bold group-hover:text-white transition-colors duration-300 text-center md:text-left">
-                  {service.title}
-                </h3>
+                 <p  className="text-xl mb-2 font-bold group-hover:text-white transition-colors duration-300 text-center md:text-left"> {service.title} </p>
+               
                 <p className="mt-2 text-sm text-gray-600 group-hover:text-gray-200 transition-colors duration-300 text-center md:text-left">
                   {service.description}
                 </p>
+              
               </div>
+              </Link>
             </motion.div>
           ))}
         </motion.div>
       </div>
+    </div>
+  
 
       {/* Testimonials */}
       <section className="my-16">
