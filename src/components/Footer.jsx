@@ -1,7 +1,6 @@
 import React from 'react';
-import { ImFacebook2 } from "react-icons/im";
-import { GrInstagram } from "react-icons/gr";
-import { FaLinkedin } from "react-icons/fa6";
+ 
+ 
 
 function Footer() {
   return (
@@ -31,9 +30,9 @@ function Footer() {
           <div>
             <h2 className="text-lg poppins-medium">Contact Us</h2>
             <ul className="mt-4 space-y-2 text-sm text-gray-400 poppins-light">
-              <li>Email: contact@dentalconnect.com</li>
+              <li>Email:  connect@dentalcareconnects.com</li>
               <li>Phone: +1 (555) 123-4567</li>
-              <li>Address: 123 Smile St, Dental City, USA</li>
+             
             </ul>
           </div>
         </div>

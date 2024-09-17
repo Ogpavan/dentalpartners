@@ -149,16 +149,16 @@ function Home() {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex">
-          <div className="bg-black bg-opacity-50 text-white w-full h-[600px] border flex justify-center items-left flex-col md:pl-28">
+          <div className="bg-black bg-opacity-50 text-white w-full h-[600px] border flex justify-center items-left flex-col">
             <motion.div
               initial="hidden"
               whileInView="visible"
               variants={textRevealVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className="text-2xl md:text-4xl font-bold poppins-bold text-center md:text-left"
+              className="text-2xl md:text-4xl font-bold poppins-bold text-center"
             >
-              <p className="text-5xl">
-                Focus on <span className="text-orange-500">Patients</span>
+              <p className="text-5xl  ">
+                Focus on <span className="text-orange-500 ">Patients</span>
               </p>
               We Handle the Rest
             </motion.div>
@@ -167,15 +167,15 @@ function Home() {
               whileInView="visible"
               variants={buttonVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className="flex flex-col md:flex-row gap-3 items-center mt-4"
+              className="flex flex-col md:flex-row gap-3 items-center mt-4 justify-center"
             >
               <Link to="/contact">
                 <button className="bg-orange-500 text-white py-2 px-4 rounded-full mt-4 hover:bg-orange-600  md:text-sm">
-                  Book an Appointment
+                 Schedule an Appointment
                 </button>
               </Link>
               <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
-                Call: +91 987654321
+                Call Us : +91 987654321
               </button>
             </motion.div>
           </div>

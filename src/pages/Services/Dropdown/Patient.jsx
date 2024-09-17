@@ -26,13 +26,21 @@ function Patient() {
 
   return (
     <div className="md:mx-48 mx-4 px-4 py-10">
-      <h1 className="text-3xl poppins-bold text-gray-800 text-center mb-8">
+      <motion.h1
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+        transition={{ duration: 0.2, delay: 0 }}
+      className="text-3xl poppins-bold text-gray-800 text-center mb-8">
         Patient Coordination
-      </h1>
+      </motion.h1>
 
-      <p className="text-lg text-gray-600 text-center mb-12 poppins-light">
-        We ensure seamless coordination to enhance your experience from scheduling appointments to post-visit care.
-      </p>
+      <motion.p
+       initial={{ opacity: 0, y: 50 }}
+       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+       transition={{ duration: 0.4, delay: 0.1 }}
+      className="text-sm md:text-md text-gray-600 text-center mb-12 poppins-light">
+      <b>Did you know that</b>, on average, 30-35% of calls to dental offices go unanswered nationwide? A recent DentistryIQ survey revealed that while 80% of new patient calls are answered, less than half are converted into first appointments. In contrast, the top 10% of practices answer 95% of calls and convert 75% of them. As a busy dentist, managing patients, verifying insurance, and handling calls simultaneously is a challenge, even for the best front desk staff, making it difficult to achieve 100% accuracy and timeliness.
+      </motion.p>
 
       {/* First Row of Cards */}
       <motion.div 
@@ -44,7 +52,7 @@ function Patient() {
 >
   {/* Appointment Scheduling */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -59,7 +67,7 @@ function Patient() {
       </p>
     </div>
     <button 
-      className="text-orange-600 mt-4 border border-orange-600 py-2 px-4 rounded-full hover:bg-orange-600 hover:text-white transition"
+      className="text-orange-600 mt-4 border border-orange-600 py-2  px-4 rounded-full hover:bg-orange-600 hover:text-white transition"
       onClick={() => scrollToSection('appointment-scheduling')}
     >
       Learn More
@@ -68,7 +76,7 @@ function Patient() {
 
   {/* Location Details */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -92,7 +100,7 @@ function Patient() {
 
   {/* Patient Demographics */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -116,7 +124,7 @@ function Patient() {
 
   {/* Patient Referrals */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -148,7 +156,7 @@ function Patient() {
 >
   {/* Insurance Information */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -172,7 +180,7 @@ function Patient() {
 
   {/* Confirmation Calls */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -196,7 +204,7 @@ function Patient() {
 
   {/* Prescription Management */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -220,7 +228,7 @@ function Patient() {
 
   {/* Google Chats and Emails */}
   <motion.div
-    className="text-center border border-gray-300 rounded-lg p-4 max-w-xs mx-auto flex flex-col justify-between"
+    className="text-center border border-gray-300 rounded-lg p-4 hover:border-orange-500 max-w-xs mx-auto flex flex-col justify-between"
     initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
     whileHover={{ scale: 1.05 }}
@@ -243,6 +251,10 @@ function Patient() {
   </motion.div>
 </motion.div>
 
+<motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.9 }}>
 
       {/* Detailed Sections */}
       <div id="appointment-scheduling" className="mt-16 mb-12">
@@ -397,12 +409,13 @@ function Patient() {
     <b className='text-orange-600'>Security & Privacy:</b> Google’s robust encryption ensures that communications remain secure and confidential, safeguarding patient information in compliance with healthcare regulations.
   </p>
 </div>
+</motion.div>
 
 
       <div className="text-center mt-10">
         <Link to="/contact">
           <button className="text-orange-600 border border-orange-600 py-2 px-6 rounded-full hover:bg-orange-600 hover:text-white transition">
-            Schedule a Appointment
+            Schedule an Appointment
           </button>
         </Link>
       </div>
