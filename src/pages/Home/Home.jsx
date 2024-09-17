@@ -135,17 +135,17 @@ function Home() {
         <div className="absolute inset-0">
           {/* Show the placeholder until the full image is loaded */}
           <img
-            src={homepagePlaceholder}
-            alt="Low-quality placeholder"
-            className={`object-cover w-full h-[600px] -z-40 object-bottom transition-opacity duration-500 ease-in-out ${isImageLoaded ? 'opacity-0' : 'opacity-100'}`}
-          />
-          <img
-            src={homepage}
-            alt="homepage"
-            className={`object-cover w-full h-[600px] absolute top-0  object-bottom transition-opacity duration-500 ease-in-out ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
-            onLoad={() => setIsImageLoaded(true)}
-          />
-        </div>
+        src={homepagePlaceholder}
+        alt="Low-quality placeholder"
+        className={`object-cover w-full h-[600px] -z-40 object-bottom transition-opacity duration-[2000ms] ease-in-out ${isImageLoaded ? 'opacity-0' : 'opacity-100'}`}
+      />
+      <img
+        src={homepage}
+        alt="homepage"
+        className={`object-cover w-full h-[600px] absolute top-0  object-bottom transition-opacity duration-[2000ms] ease-in-out ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
+        onLoad={() => setIsImageLoaded(true)}
+      />
+    </div>
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex">
