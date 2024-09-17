@@ -283,7 +283,10 @@ function Navbar() {
               </div>
             )}
              <Link to="/contact">
-              <button  onClick={() => setIsOpen(false)} className="text-orange-500 border border-orange-500 poppins-medium text-xs py-2 px-4 rounded-full w-full mt-3 mb-2 hover:bg-orange-600 hover:text-white">
+              <button   onClick={() => {
+                      setIsOpen(false);
+                      setMobileDropdownOpen(false);
+                    }} className="text-orange-500 border border-orange-500 poppins-medium text-xs py-3 px-4 rounded-full w-full mt-3 mb-2 hover:bg-orange-600 hover:text-white">
               Schedule an Appointment
               </button>
             </Link>
