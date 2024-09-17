@@ -149,7 +149,7 @@ function Home() {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex">
-          <div className="bg-black bg-opacity-50 text-white w-full h-[600px] border flex justify-center items-left flex-col md:pl-28">
+          <div className="bg-black bg-opacity-50 text-white w-full h-[600px]   flex justify-center items-left flex-col md:pl-28">
             <motion.div
               initial="hidden"
               whileInView="visible"
