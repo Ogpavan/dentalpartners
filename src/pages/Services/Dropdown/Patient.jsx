@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaPhoneAlt, FaClipboardList, FaEnvelope, FaGoogle } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { inView, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function Patient() {
     window.scrollTo(0, 0);
   }, []);
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
 
   // Helper function to handle smooth scrolling
   const scrollToSection = (id) => {
@@ -45,7 +45,7 @@ function Patient() {
       {/* First Row of Cards */}
       <motion.div 
   className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-  ref={ref}
+  
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
   transition={{ duration: 0.8, delay: 0.2 }}

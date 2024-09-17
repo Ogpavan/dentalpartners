@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { FaShieldAlt, FaCheckCircle, FaDollarSign, FaClipboardCheck } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { inView, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 // Define animation variants for cards
@@ -34,12 +34,12 @@ function Insurance() {
     window.scrollTo(0, 0);
   }, []);
 
-  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+   
 
   return (
     <div className="md:mx-48 mx-4 px-4 py-10">
       <motion.h1
-        ref={ref}
+       
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
         transition={{ duration: 0.5 }}
