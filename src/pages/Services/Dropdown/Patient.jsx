@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react';
 import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaPhoneAlt, FaClipboardList, FaEnvelope, FaGoogle } from 'react-icons/fa';
 import { inView, motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+ 
 import { Link } from 'react-router-dom';
+import { InView } from 'react-intersection-observer';
 
 function Patient() {
   useEffect(() => {
@@ -28,7 +29,7 @@ function Patient() {
     <div className="md:mx-48 mx-4 px-4 py-10">
       <motion.h1
         initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+        animate={{ opacity: InView ? 1 : 0, y: InView ? 0 : 50 }}
         transition={{ duration: 0.2, delay: 0 }}
       className="text-3xl poppins-bold text-gray-800 text-center mb-8">
         Patient Coordination

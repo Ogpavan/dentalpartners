@@ -59,7 +59,7 @@ function Insurance() {
 
       <motion.div
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
-        ref={ref}
+ 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
         transition={{ duration: 0.8, delay: 0.2 }}
