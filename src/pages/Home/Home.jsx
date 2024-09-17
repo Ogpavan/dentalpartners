@@ -3,8 +3,8 @@ import { IoNewspaperSharp } from "react-icons/io5";
 import { FaBookMedical, FaStethoscope, FaUserDoctor, FaComputer } from "react-icons/fa6";
 import { AiFillClockCircle } from "react-icons/ai";
 import { HiSpeakerphone } from "react-icons/hi";
-import homepage from '../../assets/homepage.jpg';  // Full-resolution image
-import homepagePlaceholder from '../../assets/homepagePlaceholder.jpg';  
+import homepage from '../../assets/homepage.webp';  // Full-resolution image
+import homepagePlaceholder from '../../assets/homepagePlaceholder.webp';  
 import { motion } from 'framer-motion'; // Low-quality image
 import { Link } from 'react-router-dom';
 
