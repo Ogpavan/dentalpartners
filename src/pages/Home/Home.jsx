@@ -149,13 +149,13 @@ function Home() {
 
         {/* Text Overlay */}
         <div className="absolute inset-0 flex">
-          <div className="bg-black bg-opacity-50 text-white w-full h-[600px] border flex justify-center items-left flex-col">
+          <div className="bg-black bg-opacity-50 text-white w-full h-[600px] border flex justify-center items-left flex-col md:pl-28">
             <motion.div
               initial="hidden"
               whileInView="visible"
               variants={textRevealVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className="text-2xl md:text-4xl font-bold poppins-bold text-center"
+              className="text-2xl md:text-4xl font-bold poppins-bold text-center md:text-left  "
             >
               <p className="text-5xl  ">
                 Focus on <span className="text-orange-500 ">Patients</span>
@@ -167,15 +167,15 @@ function Home() {
               whileInView="visible"
               variants={buttonVariants}
               viewport={{ once: true, amount: 0.2 }}
-              className="flex flex-col md:flex-row gap-3 items-center mt-4 justify-center"
+              className="flex flex-col md:flex-row gap-3 items-center mt-4 "
             >
               <Link to="/contact">
                 <button className="bg-orange-500 text-white py-2 px-4 rounded-full mt-4 hover:bg-orange-600  md:text-sm">
-                 Schedule an Appointment
+                 Schedule a Meeting
                 </button>
               </Link>
               <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
-                Call Us : +91 987654321
+                Call: +91 987654321
               </button>
             </motion.div>
           </div>
@@ -247,7 +247,7 @@ function Home() {
             <path d="M415.409,154.914l-2.194-48.054L372.7,80.933,346.768,40.414l-48.055-2.2L256,16.093,213.287,38.219l-48.055,2.2L139.3,80.933,98.785,106.86l-2.194,48.054L74.464,197.628l22.127,42.715,2.2,48.053L139.3,314.323l25.928,40.52,48.055,2.195L256,379.164l42.713-22.126,48.055-2.195,25.928-40.52L413.214,288.4l2.195-48.053,22.127-42.715Zm-31.646,76.949L382,270.377l-32.475,20.78-20.78,32.475-38.515,1.76L256,343.125l-34.234-17.733-38.515-1.76-20.78-32.475L130,270.377l-1.76-38.515,17.733-34.234,1.76-38.515,32.475-20.78,38.515-1.76L256,121.75l34.234,17.733,38.515,1.76,32.475,20.78,1.76,38.515,17.733,34.234Z"></path>
           </svg>
           <p className="px-6 md:text-lg poppins-light italic text-gray-800 md:px-32 text-center">
-            "Exceptional service! Dental Care Connect has streamlined our practice with top-notch insurance management and patient coordination, allowing us to focus more on delivering quality care."
+            "Exceptional service! Dental Care Connects has streamlined our practice with top-notch insurance management and patient coordination, allowing us to focus more on delivering quality care."
           </p>
           <div className="flex justify-center space-x-3">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPifbSMjy9cWkAjAH-xuPG_MTpfcSbPso5FQ&s" alt="" className="w-12 h-12 bg-center bg-cover rounded-full dark:bg-gray-500" />

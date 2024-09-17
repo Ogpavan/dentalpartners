@@ -50,7 +50,7 @@ function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm text-gray-400 poppins-light">
-          © 2024 Dental Connect. All rights reserved.
+          © 2024 Dental Care Connects. All rights reserved.
         </div>
       </div>
     </footer>

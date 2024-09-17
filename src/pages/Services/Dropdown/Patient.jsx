@@ -416,7 +416,7 @@ function Patient() {
       <div className="text-center mt-10">
         <Link to="/contact">
           <button className="text-orange-600 border border-orange-600 py-2 px-6 rounded-full hover:bg-orange-600 hover:text-white transition">
-            Schedule an Appointment
+            Schedule a Meeting
           </button>
         </Link>
       </div>
