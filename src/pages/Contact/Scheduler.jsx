@@ -35,7 +35,9 @@ function Scheduler() {
           </div>
           <div className="flex items-center justify-center">
             <FaEnvelope className="text-orange-500 text-2xl mr-2" />
-            <span className="text-gray-600 poppins-light">contact@dentalcareconnects.com</span>
+            <span className="text-gray-600 poppins-light">
+              <a href="mailto:contact@dentalcareconnects.com"  className='hover:text-orange-500 hover:underline'>
+              contact@dentalcareconnects.com </a></span>
           </div>
         </div>
       </div>
