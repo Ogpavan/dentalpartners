@@ -64,6 +64,11 @@ function Home() {
   
     const services = [
       {
+        icon: <FaUserDoctor className="text-5xl transition-colors duration-300" />,
+        title: 'Patient Coordination',
+        description: 'Involves organizing and managing patient care, appointments, and communication for effective treatment processes.',
+        link: '/services/patient',
+      }, {
         icon: <IoNewspaperSharp className="text-5xl transition-colors duration-300" />,
         title: 'Insurance Eligibility & Benefits',
         description: 'Determining if a patient qualifies for coverage and what services or treatments are covered, including costs.',
@@ -87,12 +92,7 @@ function Home() {
         description: 'Provides technical support, infrastructure management, and software solutions to optimize business operations.',
         link: '/services/itservices',
       },
-      {
-        icon: <FaUserDoctor className="text-5xl transition-colors duration-300" />,
-        title: 'Patient Coordination',
-        description: 'Involves organizing and managing patient care, appointments, and communication for effective treatment processes.',
-        link: '/services/patient',
-      },
+  
       {
         icon: <FaStethoscope className="text-5xl transition-colors duration-300" />,
         title: 'Treatment Coordination',
