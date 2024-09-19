@@ -31,7 +31,7 @@ function Footer() {
             <h2 className="text-lg poppins-medium">Contact Us</h2>
             <ul className="mt-4 space-y-2 text-sm text-gray-400 poppins-light">
               <li>Email:  <a href="mailto:contact@dentalcareconnects.com" className='hover:text-orange-500 hover:underline'>
-              connect@dentalcareconnects.com </a></li>
+             contact@dentalcareconnects.com </a></li>
               <li>Phone: +1 (555) 123-4567</li>
              
             </ul>
