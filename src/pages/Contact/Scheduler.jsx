@@ -31,7 +31,7 @@ function Scheduler() {
         <div className="flex justify-center gap-8 flex-col md:flex-row ">
           <div className="flex items-center flex-col md:flex-row">
             <FaPhoneAlt className="text-orange-500 text-2xl mr-2" />
-            <span className="text-gray-600 poppins-light">+1 (555) 123-4567</span>
+            <span className="text-gray-600 poppins-light">+91 99179625717</span>
           </div>
           <div className="flex items-center justify-center">
             <FaEnvelope className="text-orange-500 text-2xl mr-2" />
