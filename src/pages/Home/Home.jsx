@@ -175,7 +175,7 @@ function Home() {
                 </button>
               </Link>
               <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
-                Call: +91 9917962571
+                Call: +91 9458227633
               </button>
             </motion.div>
           </div>
