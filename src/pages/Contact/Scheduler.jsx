@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
 import { InlineWidget } from 'react-calendly';
 import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
-
+import { FaLinkedin, FaYoutube } from 'react-icons/fa6';
+import { GrInstagram } from 'react-icons/gr';
+import youtube from '../../assets/youtube.png';
+import instagram from '../../assets/instagram.png';
+import linkedin from '../../assets/linkedin.png';
 function Scheduler() {
 
   useEffect(() => {
@@ -39,6 +43,17 @@ function Scheduler() {
               <a href="mailto:contact@dentalcareconnects.com"  className='hover:text-orange-500 hover:underline'>
              contact@dentalcareconnects.com </a></span>
           </div>
+
+        </div>
+
+          <div className="mt-8 flex md:flex-row flex-col  justify-center items-center gap-4">
+          <a href="http://www.youtube.com/@DentalCareConnects" target="_blank" className="text-gray-400 hover:text-orange-500 flex  items-center gap-x-1">
+          <img src={youtube} className="w-8 h-8" /><span>@DentalCareConnects</span>
+        </a>
+          <a href="https://www.instagram.com/dentalcareconnects/" target="_blank" className="text-gray-400 hover:text-orange-500 flex items-center gap-x-2">
+          <img src={instagram} className='w-6 h-6'/>@dentalcareconnects </a>
+          <a href="https://www.linkedin.com/company/dental-care-connects/" target="_blank" className="text-gray-400 hover:text-orange-500  flex items-center gap-x-1">
+          <img src={linkedin} className='w-6 h-6'/>@dental-care-connects </a>
         </div>
       </div>
     </section>

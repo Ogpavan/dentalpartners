@@ -1,4 +1,7 @@
 import React from 'react';
+import { FaLinkedin, FaYoutube } from 'react-icons/fa6';
+import { GrInstagram } from 'react-icons/gr';
+import { ImFacebook2 } from 'react-icons/im';
  
  
 
@@ -39,15 +42,15 @@ function Footer() {
         </div>
 
         {/* Social Media Icons */}
-        {/* <div className="mt-8 flex justify-center space-x-6">
-          <a href="#" className="text-gray-400 hover:text-orange-500">
-          <ImFacebook2 />
+        <div className="mt-8 flex justify-center space-x-6 items-center">
+          <a href="http://www.youtube.com/@DentalCareConnects" target="_blank" className="text-gray-400 hover:text-orange-500">
+          <FaYoutube className='w-6 h-6' />
         </a>
-          <a href="#" className="text-gray-400 hover:text-orange-500">
-          <GrInstagram /> </a>
-          <a href="#" className="text-gray-400 hover:text-orange-500">
-          <FaLinkedin /></a>
-        </div> */}
+          <a href="https://www.instagram.com/dentalcareconnects/" target="_blank" className="text-gray-400 hover:text-orange-500">
+          <GrInstagram  className='w-5 h-5' /> </a>
+          <a href="https://www.linkedin.com/company/dental-care-connects/" target="_blank" className="text-gray-400 hover:text-orange-500">
+          <FaLinkedin   className='w-5 h-5'/></a>
+        </div>
 
         {/* Footer Bottom */}
         <div className="mt-8 text-center text-sm text-gray-400 poppins-light">
