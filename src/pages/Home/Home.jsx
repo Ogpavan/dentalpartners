@@ -7,6 +7,7 @@ import homepage from '../../assets/homepage.webp';  // Full-resolution image
 import homepagePlaceholder from '../../assets/homepagePlaceholder.webp';  
 import { motion } from 'framer-motion'; // Low-quality image
 import { Link } from 'react-router-dom';
+import GoogleAd from '../../components/GoogleAds';
 
 function Home() {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -182,6 +183,7 @@ function Home() {
         </div>
       </div>
 
+      <GoogleAd />
       {/* Who We Are Section */}
       <motion.div
         initial="hidden"
