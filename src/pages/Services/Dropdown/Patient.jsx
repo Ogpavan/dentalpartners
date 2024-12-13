@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaPhoneAlt, FaClipboardList, FaEnvelope, FaGoogle } from 'react-icons/fa';
 import { inView, motion } from 'framer-motion';
+import { InlineWidget } from 'react-calendly';
  
 import { Link } from 'react-router-dom';
 import { InView } from 'react-intersection-observer';
+
 
 function Patient() {
   useEffect(() => {
@@ -265,14 +267,37 @@ function Patient() {
 
     <b className='text-orange-600'>Online Booking:</b> Patients can book appointments through an easy-to-use online portal, reducing the need for phone calls and increasing accessibility. This 24/7 access allows patients to select the time that best fits their schedule.<br/><br/>
 
-    <b className='text-orange-600'>Automated Reminders:</b> Automated reminders via SMS or email help reduce no-show rates by keeping patients informed about their upcoming appointments. These reminders also include instructions or preparation details for the visit.<br/><br/>
+    <div className="flex py-0">
+      {/* Left Half: Text Content */}
+      <div className="w-full md:w-1/2 px-0">
+        <p className="mb-4">
+          <b className='text-orange-600'>Automated Reminders:</b> Automated reminders via SMS or email help reduce no-show rates by keeping patients informed about their upcoming appointments. These reminders also include instructions or preparation details for the visit.
+        </p>
+        <p className="mb-4">
+          <b className='text-orange-600'>Real-Time Availability:</b> Scheduling systems often provide real-time access to the provider’s availability, ensuring that patients can book the earliest possible appointment without waiting for a callback.
+        </p>
+        <p className="mb-4">
+          <b className='text-orange-600'>Patient Preferences:</b> Patients can specify preferences such as a particular doctor, appointment time, or mode of consultation (in-person or telehealth), which enhances the patient experience.
+        </p>
+        <p className="mb-4">
+          <b className='text-orange-600'>Cancellations & Rescheduling:</b> Patients can cancel or reschedule their appointments easily through the online system, freeing up time slots for others and improving clinic efficiency.
+        </p>
+      </div>
 
-    <b className='text-orange-600'>Real-Time Availability:</b> Scheduling systems often provide real-time access to the provider’s availability, ensuring that patients can book the earliest possible appointment without waiting for a callback.<br/><br/>
-
-    <b className='text-orange-600'>Patient Preferences:</b> Patients can specify preferences such as a particular doctor, appointment time, or mode of consultation (in-person or telehealth), which enhances the patient experience.<br/><br/>
-
-    <b className='text-orange-600'>Cancellations & Rescheduling:</b> Patients can cancel or reschedule their appointments easily through the online system, freeing up time slots for others and improving clinic efficiency.<br/><br/>
-
+      {/* Right Half: YouTube Video */}
+      <div className="w-full md:w-1/2 flex justify-center px-4 py-2">
+        <iframe
+          width="620"
+          height="350"
+          src="https://www.youtube.com/embed/GkLwxj34FME?autoplay=1"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          className="rounded-lg"
+        ></iframe>
+      </div>
+    </div>
     <b className='text-orange-600'>Integration with EHR:</b> Appointment scheduling systems often integrate with electronic health records (EHR), enabling providers to access patient history and prepare for the visit beforehand.
   </p>
 </div>
@@ -411,7 +436,69 @@ function Patient() {
   </p>
 </div>
 </motion.div>
+<div className="text-center py-16 bg-gray-100">
+            <h2 className="text-3xl font-semibold mb-12 text-gray-800">Our Pricing Plans</h2>
+            <div className="flex justify-center gap-8 flex-wrap">
+                {/* Hourly Plan */}
+                <div className="bg-white shadow-lg rounded-lg p-6 w-80 transform transition-all hover:scale-105">
+                    <h3 className="text-xl font-medium text-orange-600 mb-4">Hourly Plan</h3>
+                    <p className="text-3xl font-semibold text-black-600 mb-6">$15/hour</p>
+                    <ul className="text-left mb-6 text-gray-600 space-y-3">
+                        <li>Flexible hours</li>
+                        <li>Pay-as-you-go</li>
+                        <li>24/7 support</li>
+                    </ul>
+                    <Link to="/contact">
+                    <button className="bg-orange-600 text-white py-2 px-6 rounded-md hover:bg-orange-700 transition duration-300">
+                        Contact Now
+                    </button>
+                    </Link>
+                </div>
 
+                {/* Weekly Plan */}
+                <div className="bg-white shadow-lg rounded-lg p-6 w-80 transform transition-all hover:scale-105">
+                    <h3 className="text-xl font-medium text-orange-600 mb-4">Weekly Plan</h3>
+                    <p className="text-3xl font-semibold text-black-600 mb-6">$500/week</p>
+                    <ul className="text-left mb-6 text-gray-600 space-y-3">
+                        <li>40 hours/week</li>
+                        <li>Dedicated coordinator</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <Link to="/contact">
+                    <button className="bg-orange-600 text-white py-2 px-6 rounded-md hover:bg-orange-700 transition duration-300">
+                        Contact Now
+                    </button>
+                    </Link>
+                </div>
+
+                {/* Monthly Plan */}
+                <div className="bg-white shadow-lg rounded-lg p-6 w-80 transform transition-all hover:scale-105">
+                    <h3 className="text-xl font-medium text-orange-600 mb-4">Monthly Plan</h3>
+                    <p className="text-3xl font-semibold text-black-600 mb-6">$2000/month</p>
+                    <ul className="text-left mb-6 text-gray-600 space-y-3">
+                        <li>160 hours/month</li>
+                        <li>Comprehensive support</li>
+                        <li>Dedicated Account Manager</li>
+                    </ul>
+                    <Link to="/contact">
+                    <button className="bg-orange-600 text-white py-2 px-6 rounded-md hover:bg-orange-700 transition duration-300">
+                        Contact Now
+                    </button>
+                    </Link>
+                </div>
+            </div>
+        </div>
+        <section className=" py-10">
+              {/* Heading at the top */}
+              <h2 className="text-3xl poppins-bold text-gray-800 text-center mb-8">
+                Schedule a Meeting with Our Remote Patient Coordination Team
+              </h2>
+              
+              {/* Calendly Inline Widget */}
+              <div className=" ">
+                <InlineWidget url="https://calendly.com/contact-dentalcareconnects/30min" className=" w-full h-full " />
+              </div>
+              </section>
 
       <div className="text-center mt-10">
         <Link to="/contact">
