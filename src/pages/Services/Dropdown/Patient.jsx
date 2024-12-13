@@ -36,18 +36,40 @@ function Patient() {
       className="text-3xl poppins-bold text-gray-800 text-center mb-8">
         Patient Coordination
       </motion.h1>
-
-      <motion.p
-       initial={{ opacity: 0, y: 50 }}
-       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-       transition={{ duration: 0.4, delay: 0.1 }}
-      className="text-sm md:text-md text-gray-600 text-center mb-12 poppins-light">
+{/* Left Half: Text Content */}
+<div className="flex flex-col md:flex-row py-4">
+  {/* Left Half: Animated Text */}
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+    transition={{ duration: 0.4, delay: 0.1 }}
+    className="w-full md:w-[88%] px-4"
+  >
+    <p className="text-base md:text-2xl text-gray-600 text-left mb-6 poppins-light">
       <b>Did you know that</b>, on average, 30-35% of calls to dental offices go unanswered nationwide? A recent DentistryIQ survey revealed that while 80% of new patient calls are answered, less than half are converted into first appointments. In contrast, the top 10% of practices answer 95% of calls and convert 75% of them. As a busy dentist, managing patients, verifying insurance, and handling calls simultaneously is a challenge, even for the best front desk staff, making it difficult to achieve 100% accuracy and timeliness.
-      </motion.p>
+    </p>
+  </motion.div>
+
+  {/* Right Half: YouTube Video */}
+  <div className="w-full md:w-[88%] flex justify-center px-4 py-4 md:py-0">
+    <iframe
+      width="100%"
+      height="250"
+      className="rounded-lg md:h-[350px]"
+      src="https://www.youtube.com/embed/GkLwxj34FME?autoplay=1"
+      title="YouTube video player"
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  </div>
+</div>
+
+
 
       {/* First Row of Cards */}
       <motion.div 
-  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-10"
   
   initial={{ opacity: 0, y: 50 }}
   animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
@@ -267,37 +289,14 @@ function Patient() {
 
     <b className='text-orange-600'>Online Booking:</b> Patients can book appointments through an easy-to-use online portal, reducing the need for phone calls and increasing accessibility. This 24/7 access allows patients to select the time that best fits their schedule.<br/><br/>
 
-    <div className="flex py-0">
-      {/* Left Half: Text Content */}
-      <div className="w-full md:w-1/2 px-0">
-        <p className="mb-4">
-          <b className='text-orange-600'>Automated Reminders:</b> Automated reminders via SMS or email help reduce no-show rates by keeping patients informed about their upcoming appointments. These reminders also include instructions or preparation details for the visit.
-        </p>
-        <p className="mb-4">
-          <b className='text-orange-600'>Real-Time Availability:</b> Scheduling systems often provide real-time access to the provider’s availability, ensuring that patients can book the earliest possible appointment without waiting for a callback.
-        </p>
-        <p className="mb-4">
-          <b className='text-orange-600'>Patient Preferences:</b> Patients can specify preferences such as a particular doctor, appointment time, or mode of consultation (in-person or telehealth), which enhances the patient experience.
-        </p>
-        <p className="mb-4">
-          <b className='text-orange-600'>Cancellations & Rescheduling:</b> Patients can cancel or reschedule their appointments easily through the online system, freeing up time slots for others and improving clinic efficiency.
-        </p>
-      </div>
+    <b className='text-orange-600'>Automated Reminders:</b> Automated reminders via SMS or email help reduce no-show rates by keeping patients informed about their upcoming appointments. These reminders also include instructions or preparation details for the visit.<br/><br/>
 
-      {/* Right Half: YouTube Video */}
-      <div className="w-full md:w-1/2 flex justify-center px-4 py-2">
-        <iframe
-          width="620"
-          height="350"
-          src="https://www.youtube.com/embed/GkLwxj34FME?autoplay=1"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="rounded-lg"
-        ></iframe>
-      </div>
-    </div>
+    <b className='text-orange-600'>Real-Time Availability:</b> Scheduling systems often provide real-time access to the provider’s availability, ensuring that patients can book the earliest possible appointment without waiting for a callback.<br/><br/>
+
+    <b className='text-orange-600'>Patient Preferences:</b> Patients can specify preferences such as a particular doctor, appointment time, or mode of consultation (in-person or telehealth), which enhances the patient experience.<br/><br/>
+
+    <b className='text-orange-600'>Cancellations & Rescheduling:</b> Patients can cancel or reschedule their appointments easily through the online system, freeing up time slots for others and improving clinic efficiency.<br/><br/>
+
     <b className='text-orange-600'>Integration with EHR:</b> Appointment scheduling systems often integrate with electronic health records (EHR), enabling providers to access patient history and prepare for the visit beforehand.
   </p>
 </div>
