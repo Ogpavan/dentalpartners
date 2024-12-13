@@ -21,7 +21,7 @@ function Scheduler() {
       
       {/* Calendly Inline Widget */}
       <div className=" ">
-        <InlineWidget url="https://calendly.com/abhigangwarlife/30min" className=" w-full h-full " />
+        <InlineWidget url="https://calendly.com/contact-dentalcareconnects/30min" className=" w-full h-full " />
       </div>
 
       {/* Contact Information at the bottom */}

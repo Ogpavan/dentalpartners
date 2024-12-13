@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaPhoneAlt, FaClipboardList, FaEnvelope, FaGoogle } from 'react-icons/fa';
+import { FaCalendarAlt, FaMapMarkerAlt, FaUser, FaPhoneAlt, FaClipboardList, FaEnvelope, FaGoogle, FaShieldAlt } from 'react-icons/fa';
 import { inView, motion } from 'framer-motion';
 import { InlineWidget } from 'react-calendly';
  
@@ -33,7 +33,7 @@ function Patient() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: InView ? 1 : 0, y: InView ? 0 : 50 }}
         transition={{ duration: 0.2, delay: 0 }}
-      className="text-3xl poppins-bold text-gray-800 text-center mb-8">
+      className="text-4xl poppins-bold text-gray-800 text-center mb-8">
         Patient Coordination
       </motion.h1>
 {/* Left Half: Text Content */}
@@ -45,18 +45,18 @@ function Patient() {
     transition={{ duration: 0.4, delay: 0.1 }}
     className="w-full md:w-[88%] px-4"
   >
-    <p className="text-base md:text-2xl text-gray-600 text-left mb-6 poppins-light">
+    <p className="text-base md:text-lg text-gray-600 text-left mb-6 poppins-light">
       <b>Did you know that</b>, on average, 30-35% of calls to dental offices go unanswered nationwide? A recent DentistryIQ survey revealed that while 80% of new patient calls are answered, less than half are converted into first appointments. In contrast, the top 10% of practices answer 95% of calls and convert 75% of them. As a busy dentist, managing patients, verifying insurance, and handling calls simultaneously is a challenge, even for the best front desk staff, making it difficult to achieve 100% accuracy and timeliness.
     </p>
   </motion.div>
 
   {/* Right Half: YouTube Video */}
-  <div className="w-full md:w-[88%] flex justify-center px-4 py-4 md:py-0">
+  <div className="w-full md:w-[50%] flex justify-center px-4 py-4 md:py-0">
     <iframe
       width="100%"
       height="250"
-      className="rounded-lg md:h-[350px]"
-      src="https://www.youtube.com/embed/GkLwxj34FME?autoplay=1"
+      className="rounded-lg md:h-[286px]"
+      src="https://www.youtube.com/embed/GkLwxj34FME?autoplay=10"
       title="YouTube video player"
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -84,11 +84,11 @@ function Patient() {
   >
     <div>
       <div className="mb-4 flex justify-center">
-        <FaCalendarAlt className="text-4xl text-orange-500" />
+        <FaPhoneAlt className="text-4xl text-orange-500" />
       </div>
-      <h2 className="text-xl poppins-medium text-gray-800 mb-2">Appointment Scheduling</h2>
+      <h2 className="text-xl poppins-medium text-gray-800 mb-2">Answering Calls</h2>
       <p className="text-gray-600 poppins-light text-sm">
-        Faster scheduling with specialized teams for new patient appointments.
+      Specialized team answering calls to reduce missed calls and ensure seamless communication.
       </p>
     </div>
     <button 
@@ -188,7 +188,7 @@ function Patient() {
   >
     <div>
       <div className="mb-4 flex justify-center">
-        <FaPhoneAlt className="text-4xl text-orange-500" />
+        <FaShieldAlt className="text-4xl text-orange-500" />
       </div>
       <h2 className="text-xl poppins-medium text-gray-800 mb-2">Insurance Information</h2>
       <p className="text-gray-600 poppins-light text-sm">
@@ -283,21 +283,22 @@ function Patient() {
 
       {/* Detailed Sections */}
       <div id="appointment-scheduling" className="mt-16 mb-12">
-  <h2 className="text-2xl poppins-bold text-gray-800 mb-4">Appointment Scheduling</h2>
+  <h2 className="text-2xl poppins-bold text-gray-800 mb-4">Answering Calls</h2>
   <p className="text-gray-600 poppins-light text-lg">
-    <b>Appointment Scheduling</b> is a key component of patient care, ensuring efficient management of healthcare services. It simplifies the process of booking, rescheduling, and canceling appointments. Key features include:<br/><br/>
+    <b>Answering Calls</b> by a Remote Patient Coordinator plays a critical role in ensuring seamless communication and efficient management of patient care in a dental office. Their role simplifies the process of handling inquiries, scheduling, rescheduling, and managing patient information. Key features include:<br/><br/>
 
-    <b className='text-orange-600'>Online Booking:</b> Patients can book appointments through an easy-to-use online portal, reducing the need for phone calls and increasing accessibility. This 24/7 access allows patients to select the time that best fits their schedule.<br/><br/>
+    <b className='text-orange-600'>Call Answering & Scheduling:</b> Remote Patient Coordinators handle incoming calls and assist patients in scheduling appointments quickly and efficiently, reducing wait times and ensuring better access to services.<br/><br/>
 
-    <b className='text-orange-600'>Automated Reminders:</b> Automated reminders via SMS or email help reduce no-show rates by keeping patients informed about their upcoming appointments. These reminders also include instructions or preparation details for the visit.<br/><br/>
+    <b className='text-orange-600'>Appointment Reminders:</b> Coordinators provide timely reminders via calls or messages to reduce no-show rates. These reminders include important details such as preparation instructions and appointment confirmations.<br/><br/>
 
-    <b className='text-orange-600'>Real-Time Availability:</b> Scheduling systems often provide real-time access to the provider’s availability, ensuring that patients can book the earliest possible appointment without waiting for a callback.<br/><br/>
+    <b className='text-orange-600'>Real-Time Assistance:</b> By addressing patient queries in real time, Remote Patient Coordinators ensure patients have immediate access to information regarding provider availability, services, or office policies..<br/><br/>
 
-    <b className='text-orange-600'>Patient Preferences:</b> Patients can specify preferences such as a particular doctor, appointment time, or mode of consultation (in-person or telehealth), which enhances the patient experience.<br/><br/>
+    <b className='text-orange-600'>Custom Patient Preferences:</b> They gather and document patient preferences, such as preferred appointment times, specific providers, or consultation modes (in-person or virtual), enhancing the patient experience.<br/><br/>
 
-    <b className='text-orange-600'>Cancellations & Rescheduling:</b> Patients can cancel or reschedule their appointments easily through the online system, freeing up time slots for others and improving clinic efficiency.<br/><br/>
+    <b className='text-orange-600'>Rescheduling & Cancellations:</b> Coordinators manage rescheduling and cancellations with ease, helping to optimize the clinic's schedule and fill open time slots efficiently.<br/><br/>
 
-    <b className='text-orange-600'>Integration with EHR:</b> Appointment scheduling systems often integrate with electronic health records (EHR), enabling providers to access patient history and prepare for the visit beforehand.
+    <b className='text-orange-600'>Improved Patient Communication:</b> Acting as a bridge between patients and the dental office, they ensure all inquiries are addressed, fostering trust and satisfaction.
+    <p>This streamlined approach helps dental offices provide exceptional service, reduce missed opportunities, and maintain an organized and professional patient management system.</p> 
   </p>
 </div>
 
