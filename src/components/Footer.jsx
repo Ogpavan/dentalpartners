@@ -36,7 +36,7 @@ function Footer() {
               <li>Email:  <a href="mailto:contact@dentalcareconnects.com" className='hover:text-orange-500 hover:underline'>
              contact@dentalcareconnects.com </a></li>
              <a href="tel:+17342903404">
-  <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
+  <button>
     Call: +1 (734)290-3404
   </button>
 </a>
