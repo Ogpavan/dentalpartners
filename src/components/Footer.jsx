@@ -35,7 +35,11 @@ function Footer() {
             <ul className="mt-4 space-y-2 text-sm text-gray-400 poppins-light">
               <li>Email:  <a href="mailto:contact@dentalcareconnects.com" className='hover:text-orange-500 hover:underline'>
              contact@dentalcareconnects.com </a></li>
-              <li>Phone: +1 7342903404</li>
+             <a href="tel:+17342903404">
+  <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
+    Call: +1 (734)290-3404
+  </button>
+</a>
              
             </ul>
           </div>

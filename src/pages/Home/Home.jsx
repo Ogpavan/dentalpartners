@@ -205,7 +205,7 @@ function Home() {
               </Link>
               <a href="tel:+17342903404">
   <button className="border text-white py-2 px-4 rounded-full md:mt-4 md:text-sm">
-    Call: +1 (734) 290-3404
+    Call: +1 (734)290-3404
   </button>
 </a>
 
