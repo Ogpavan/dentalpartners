@@ -124,7 +124,7 @@ function Navbar() {
                     className="block px-4 py-2 text-gray-800 hover:bg-gray-200 border-b border-gray-300"
                     onClick={() => setDropdownOpen(false)}
                   >
-                   IT Services
+                   Website Development Services
                   </Link>
                   <Link
                     to="/services/treatment"

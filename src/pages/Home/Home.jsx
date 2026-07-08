@@ -107,9 +107,9 @@ function Home() {
     },
     {
       icon: <FaComputer className="text-5xl transition-colors duration-300" />,
-      title: "IT Services",
+      title: "Website Services",
       description:
-        "Provides technical support, infrastructure management, and software solutions to optimize business operations.",
+        "Provides website development, website management, and website solutions to optimize business operations.",
       link: "/services/itservices",
     },
 

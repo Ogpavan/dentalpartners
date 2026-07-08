@@ -62,7 +62,7 @@ function ITServices() {
         transition={{ duration: 0.2 }}
         className="text-3xl poppins-bold text-gray-800 text-center mb-8"
       >
-        Our IT Services
+        Our Website Development Services
       </motion.h1>
       <motion.p
         initial={{ opacity: 0, y: 50 }}
@@ -72,7 +72,7 @@ function ITServices() {
       >
  
 
-Are you willing to risk data loss, security breaches, and downtime by neglecting IT system management? Just as regular maintenance is crucial for IT infrastructure, consistent system management and backup services are vital for your business’s growth and data security. Avoid temporary fixes and reactive approaches. Our specialized IT management and backup services ensure your technology stays optimized and secure.
+Your website is often the first impression customers have of your business. A modern, fast, and responsive website builds trust, improves conversions, and helps your brand stand out. From design to deployment, we create SEO-friendly, high-performance websites tailored to your business.
        </motion.p>
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
@@ -80,7 +80,7 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
   animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
   transition={{ duration: 0.8, delay: 0.2 }}
       >
-        {/* Software Development */}
+        {/* Custom Website Development */}
         <motion.div
           variants={cardVariants}
           whileHover="hover"
@@ -89,9 +89,9 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           <div className="mb-4 flex justify-center">
             <FaLaptopCode className="text-4xl text-orange-500" />
           </div>
-          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Software Development</h2>
+          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Custom Website Development</h2>
           <p className="text-gray-600 poppins-light text-sm mb-4">
-            Custom software solutions tailored to your business needs.
+            Custom websites designed and developed to match your business goals and brand identity.
           </p>
           <motion.button
             className="text-orange-600 border border-gray-300 py-2 px-4 rounded-full hover:border-orange-500 hover:bg-orange-600 hover:text-white transition"
@@ -102,7 +102,7 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           </motion.button>
         </motion.div>
 
-        {/* Network Solutions */}
+        {/* Responsive Web Design */}
         <motion.div
           variants={cardVariants}
           whileHover="hover"
@@ -111,9 +111,9 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           <div className="mb-4 flex justify-center">
             <FaNetworkWired className="text-4xl text-orange-500" />
           </div>
-          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Network Solutions</h2>
+          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Responsive Web Design</h2>
           <p className="text-gray-600 poppins-light text-sm mb-4">
-            Reliable and secure network infrastructure setup and maintenance.
+            Beautiful, mobile-friendly designs that provide a seamless experience across all devices.
           </p>
           <motion.button
             className="text-orange-600 border border-gray-300 py-2 px-4 rounded-full hover:border-orange-500 hover:bg-orange-600 hover:text-white transition"
@@ -124,7 +124,7 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           </motion.button>
         </motion.div>
 
-        {/* Database Management */}
+        {/* E-Commerce Development */}
         <motion.div
           variants={cardVariants}
           whileHover="hover"
@@ -133,9 +133,9 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           <div className="mb-4 flex justify-center">
             <FaDatabase className="text-4xl text-orange-500" />
           </div>
-          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Database Management</h2>
+          <h2 className="text-xl poppins-medium text-gray-800 mb-2">E-Commerce Development</h2>
           <p className="text-gray-600 poppins-light text-sm mb-4">
-            Efficient database solutions to manage and secure your data.
+            Powerful online stores with secure payments, product management, and scalable architecture.
           </p>
           <motion.button
             className="text-orange-600 border border-gray-300 py-2 px-4 rounded-full hover:border-orange-500 hover:bg-orange-600 hover:text-white transition"
@@ -146,7 +146,7 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           </motion.button>
         </motion.div>
 
-        {/* Cybersecurity */}
+        {/* Website Maintenance */}
         <motion.div
           variants={cardVariants}
           whileHover="hover"
@@ -155,9 +155,9 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
           <div className="mb-4 flex justify-center">
             <FaShieldAlt className="text-4xl text-orange-500" />
           </div>
-          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Cybersecurity</h2>
+          <h2 className="text-xl poppins-medium text-gray-800 mb-2">Website Maintenance</h2>
           <p className="text-gray-600 poppins-light text-sm mb-4">
-            Comprehensive security services to protect your digital assets.
+            Keep your website secure, updated, fast, and running smoothly with ongoing support.
           </p>
           <motion.button
             className="text-orange-600 border border-gray-300 py-2 px-4 rounded-full hover:border-orange-500 hover:bg-orange-600 hover:text-white transition"
@@ -177,10 +177,10 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
         className="mt-16"
       >
       <div id='software-development' className="mb-12">
-  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Software Development</h2>
+  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Custom Website Development</h2>
   <div>
     <p className="poppins-light text-gray-600">
-      <b>Software Development</b> encompasses a range of services tailored to meet your business needs, ensuring that your software solutions drive efficiency and innovation. Key aspects include:
+      <b>Custom Website Development</b> encompasses a range of services tailored to meet your business needs, ensuring that your software solutions drive efficiency and innovation. Key aspects include:
       <br/><br/>
       
       <b className='text-orange-600'>Custom Solutions:</b> We provide bespoke software solutions designed specifically for your business requirements, ensuring a perfect fit and optimal performance.
@@ -198,10 +198,10 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
 </div>
 
 <div id='network-solutions' className="mb-12">
-  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Network Solutions</h2>
+  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Responsive Web Design</h2>
   <div>
     <p className="poppins-light text-gray-600">
-      <b>Network Solutions</b> are essential for establishing and maintaining secure and efficient network infrastructures. Key features include:
+      <b>Responsive Web Design</b> are essential for establishing and maintaining secure and efficient network infrastructures. Key features include:
       <br/><br/>
       
       <b className='text-orange-600'>Secure Setup:</b> We design and implement secure network configurations to protect your business from unauthorized access and cyber threats.
@@ -219,10 +219,10 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
 </div>
 
 <div id='database-management' className="mb-12">
-  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Database Management</h2>
+  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">E-Commerce Development</h2>
   <div>
     <p className="poppins-light text-gray-600">
-      Our <b className='text-orange-600'>Database Management</b> services are designed to ensure that your data is meticulously managed and protected. Effective database management is crucial for maintaining data integrity, optimizing performance, and supporting business operations. Key aspects of our services include:
+      Our <b className='text-orange-600'>E-Commerce Development</b> services are designed to ensure that your data is meticulously managed and protected. Effective database management is crucial for maintaining data integrity, optimizing performance, and supporting business operations. Key aspects of our services include:
       <br/><br/>
       
       <b className='text-orange-600'>Data Storage:</b> We provide robust solutions for storing your data securely, ensuring that it is both accessible and protected from unauthorized access.
@@ -240,10 +240,10 @@ Are you willing to risk data loss, security breaches, and downtime by neglecting
 </div>
 
 <div id='cybersecurity' className="mb-12">
-  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Cybersecurity</h2>
+  <h2 className="text-3xl poppins-bold text-gray-800 mb-4">Website Maintenance</h2>
   <div>
     <p className="poppins-light text-gray-600">
-      Our <b className='text-orange-600'>Cybersecurity</b> services are designed to offer comprehensive protection for your digital assets against a wide range of cyber threats. In today’s digital landscape, safeguarding your business from potential attacks is crucial. We provide a suite of services to ensure robust security and resilience:
+      Our <b className='text-orange-600'>Website Maintenance</b> services are designed to offer comprehensive protection for your digital assets against a wide range of cyber threats. In today’s digital landscape, safeguarding your business from potential attacks is crucial. We provide a suite of services to ensure robust security and resilience:
       <br/><br/>
       
       <b className='text-orange-600'>Threat Detection:</b> We utilize advanced tools and techniques to identify and mitigate potential threats before they can impact your operations. Continuous monitoring helps in early detection of vulnerabilities.
