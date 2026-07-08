@@ -240,7 +240,7 @@ function Navbar() {
                     setMobileDropdownOpen(false);
                   }}
                 >
-                   IT Services
+                   Web Development Services
                 </Link>     <Link
                   to="/services/treatment"
                   className=" poppins-light block px-3 py-2 rounded-md text-base font-medium text-gray-800 hover:bg-gray-200 border-b border-gray-300"
