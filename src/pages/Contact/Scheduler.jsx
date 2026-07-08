@@ -21,7 +21,7 @@ function Scheduler() {
       
       {/* Calendly Inline Widget */}
       <div className=" ">
-        <InlineWidget url="https://calendly.com/contact-dentalcareconnects/30min" className=" w-full h-full " />
+        <InlineWidget url="https://calendly.com/dentalcareconnects/30min" className=" w-full h-full " />
       </div>
 
       {/* Contact Information at the bottom */}
@@ -35,7 +35,7 @@ function Scheduler() {
         <div className="flex justify-center gap-8 flex-col md:flex-row ">
           <div className="flex items-center flex-col md:flex-row">
             <FaPhoneAlt className="text-orange-500 text-2xl mr-2" />
-            <span className="text-gray-600 poppins-light">+91 9458227633</span>
+            <span className="text-gray-600 poppins-light">+1 (803)361-8736</span>
           </div>
           <div className="flex items-center justify-center">
             <FaEnvelope className="text-orange-500 text-2xl mr-2" />
