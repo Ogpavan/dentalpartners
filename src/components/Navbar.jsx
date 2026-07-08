@@ -157,11 +157,11 @@ function Navbar() {
                 </div>
               )}
             </div>
-            <Link to="/contact">
+            <a href="tel:+18033618736">
               <button className="text-orange-500 border border-orange-500 poppins-medium text-xs py-2 px-4 rounded-full hover:bg-orange-600 hover:text-white">
-              Schedule a Meeting
+              Contact Us
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -287,10 +287,10 @@ function Navbar() {
                       setIsOpen(false);
                       setMobileDropdownOpen(false);
                     }} className="text-orange-500 border border-orange-500 poppins-medium text-xs py-3 px-4 rounded-full w-full mt-3 mb-2 hover:bg-orange-600 hover:text-white">
-              Schedule a Meeting
+              Contact Us
               </button>
             </Link>
-          </div>
+          </div> 
         </div>
       )}
     </nav>
